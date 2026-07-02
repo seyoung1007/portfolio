@@ -330,7 +330,7 @@ body {
 }
 .v-img {
   margin-top: 100px;
-  width: 100%;
+  width: 120%;
   height: auto;
   text-align: center;
 }
@@ -479,6 +479,7 @@ body {
 }
 
 .p-top {
+
   display: flex;
   justify-content: flex-end;
   align-items: center;

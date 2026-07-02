@@ -51,6 +51,7 @@
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/design.js" defer></script>
 
     <!-- Link Swiper's CSS -->
     <link
@@ -64,6 +65,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/design.css" />
     <!-- 폰트어썸 -->
     <link
       rel="stylesheet"
@@ -83,7 +85,7 @@
       <header class="header">
         <div class="inner">
           <a href="#" class="logo">
-            <img src="./assets/images/zuyoe1.png" class="zulogo" />
+            <img src="./assets/images/seyoung1.png" class="zulogo" />
           </a>
           <div class="header-right">
             <div class="h-home" data-link="#visual">
@@ -113,12 +115,12 @@
             data-aos-duration="900"
             data-offset="-500"
           >
-            <h1><span class="hd-color">I'm</span><br />Fearless!</h1>
+            <h1><span class="hd-color">Design</span><br />with Purpose</h1>
             <p>
-              새로운 분야에 겁 없이 뛰어든
+              사용자의 경험을 고민하며 디자인하는
               <span class="hd-name">윤세영</span>입니다. <br />
-              도전하는 것에 두려움을 가지지 않고 정진하며,<br />
-              늘 열정과 온 힘을 다하는 퍼블리셔가 되겠습니다!
+              보기 좋은 화면을 넘어, 사용하기 편한 웹을 만들기 위해<br />
+              UI/UX와 퍼블리싱을 함께 고민합니다.
             </p>
             <img
               src="./assets/images/vmw.png"
@@ -127,7 +129,7 @@
             />
           </div>
           <div class="visual-right">
-            <img src="./assets/images/me_c1.png" class="v-img" />
+            <img src="./assets/images/seyounghero.png" class="v-img" />
           </div>
         </div>
       </section>
@@ -143,16 +145,20 @@
           <div class="p-top">
             <img src="./assets/images/mezu.png" />
             <div class="bubble">
-              <h1>Hello World!<br />웹 퍼블리셔 <b>윤세영</b> 입니다!</h1>
+              <h1>
+                Hello World!<br />사용자 경험을 디자인하는 <b>윤세영</b> 입니다!
+              </h1>
               <p>
-                어릴 적부터 미술에 관심이 많아 자연스럽게 디자인과로 진로로
-                선택하여,<br />
-                자주 접하는 웹 화면을 보며 나도 저렇게 만들어 내고 싶다는 생각을
-                자주 하였습니다. <br /><br />사용자가 쉽고 편하게 이용할 수 있는
-                디자인을 웹으로 나타내는 것에 제 목표입니다.<br />
-                겁 없이 도전한 퍼블리셔에서 더 나아가 프론트엔드 까지 도전해
-                나갈 것입니다. <br />항상 도전하고 열려있는 자세로 맡은 일에
-                최선을 다하는 사람이 되겠습니다.
+                좋은 디자인은 보기 좋은 화면을 넘어 사용자가 편안하게 경험할 수
+                있는 것이라고 생각합니다.<br />
+                비전공자로 시작했지만 꾸준한 배움과 프로젝트 경험을 통해
+                웹디자인과 퍼블리싱을 익히며 실무 역량을 키워왔습니다.
+                <br /><br />Figma를 활용한 UI 디자인과 HTML, CSS, JavaScript를
+                통한 퍼블리싱이 가능하며,<br />
+                AI를 적극적으로 활용해 아이디어를 구체화하고 작업 효율을 높이며
+                <br />더 나은 결과물을 만들기 위해 노력하고 있습니다.
+                <br />변화하는 기술과 디자인을 즐겁게 배우며, 사용자에게 더 나은
+                경험을 제공하는 웹디자이너로 성장해 나가겠습니다.
               </p>
             </div>
           </div>
@@ -178,14 +184,14 @@
               <h2><i class="fa-solid fa-arrow-rotate-left"></i>History</h2>
               <div class="gnb">
                 <ul class="history-en">
-                  <li>2023. 04</li>
-                  <li>2022. 10</li>
-                  <li>2020. 03</li>
+                  <li>2026. 07</li>
                 </ul>
                 <ul class="history-kr">
-                  <li>그린컴퓨터학원(KDT) React 개발자과정 수료</li>
-                  <li>대구 AI 스쿨 수료</li>
-                  <li>시각디자인과 졸업</li>
+                  <li>
+                    AI도구활용 사용자중심 UI/UX 디자인 및 프로토타이핑 수료
+                  </li>
+                  <li></li>
+                  <li></li>
                 </ul>
               </div>
             </div>
@@ -227,8 +233,12 @@
                 <div class="swiper-slide">
                   <div class="project">
                     <div class="pj-img">
-                      <!-- <img src="./assets/images/computer.png" class="com" /> -->
-                      <img src="./assets/images/stx.gif" class="stx-gif" />
+                      <video class="stx-gif" autoplay loop muted playsinline>
+                        <source
+                          src="./assets/video/stx-clone.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
                     </div>
                     <div class="study-project">
                       <h2 class="pp">PERSONAL PROJECT</h2>
@@ -252,44 +262,6 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div class="pj-img">
-                      <img
-                        src="./assets/images/hansalim.gif"
-                        class="hansalim-gif"
-                      />
-                    </div>
-                    <div class="study-project">
-                      <h2 class="pp">PERSONAL PROJECT</h2>
-                      <h1>한살림 장보기</h1>
-                      <p>2022. 11. 09 ~ 2022. 12. 21</p>
-                      <span>
-                        제작 인원 : 1명(기여도 : 100%) <br />
-                        사용 프로그램 : HTML, CSS, JavaScript
-                      </span>
-                      <div class="swiper-btn">
-                        <a
-                          href="https://zuyoe.github.io/hansalim/"
-                          target="_blank"
-                          >Work</a
-                        >
-                        <a
-                          href="https://github.com/zuyoe/hansalim"
-                          target="_blank"
-                          >GitHub</a
-                        >
-                        <a
-                          href="https://shop.hansalim.or.kr/shopping/spMain.do"
-                          target="_blank"
-                          >Origin</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
                 <div class="swiper-slide">
                   <div class="project">
                     <div class="pj-img">
@@ -319,216 +291,6 @@
                         >
                         <a href="http://www.disirocktong.co.kr/" target="_blank"
                           >Origin</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div class="pj-img">
-                      <img
-                        src="./assets/images/hyundai.gif"
-                        class="hyundai-gif"
-                      />
-                    </div>
-                    <div class="study-project">
-                      <h2 class="pp">PERSONAL PROJECT</h2>
-                      <h1>현대그룹</h1>
-                      <p>2023. 02. 27 ~ 2022. 03. 15</p>
-                      <span>
-                        제작 인원 : 1명(기여도 : 100%) <br />
-                        사용 기술 : HTML, CSS, JavaScript, AOS, Anime.js,
-                        Swiper.js
-                      </span>
-                      <div class="swiper-btn">
-                        <a
-                          href="https://zuyoe.github.io/hyundai-clone/"
-                          target="_blank"
-                          >Work</a
-                        >
-                        <a
-                          href="https://github.com/zuyoe/hyundai-clone"
-                          target="_blank"
-                          >GitHub</a
-                        >
-                        <a href="https://www.hyundaigroup.com/" target="_blank"
-                          >Origin</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div class="pj-img">
-                      <img src="./assets/images/wonderplace.gif" />
-                    </div>
-                    <div class="study-project">
-                      <h2 class="pp">PERSONAL PROJECT</h2>
-                      <h1>원더플레이스</h1>
-                      <p>2023. 03. 20 ~ 2023. 04. 05</p>
-                      <span>
-                        제작 인원 : 1명(기여도 : 100%) <br />
-                        사용 기술 : HTML, CSS, JavaScript, AOS, Anime.js,
-                        Swiper.js
-                      </span>
-                      <div class="swiper-btn">
-                        <a
-                          href="https://zuyoe.github.io/wonderplace/"
-                          target="_blank"
-                          >Work</a
-                        >
-                        <a
-                          href="https://github.com/zuyoe/wonderplace"
-                          target="_blank"
-                          >GitHub</a
-                        >
-                        <a href="https://www.wonderplace.co.kr/" target="_blank"
-                          >Origin</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div class="pj-img">
-                      <img src="./assets/images/kyobo.png" />
-                    </div>
-                    <div class="study-project">
-                      <h2 class="tp">TEAM PROJECT</h2>
-                      <h1>Adobe</h1>
-                      <p>2022. 12. 19 ~ 2022. 12. 23</p>
-                      <span>
-                        제작 인원 : 7명[FE: 3명 / BE : 4명](기여도 : 35%) <br />
-                        사용 기술 : HTML, CSS, JavaScript, React, Bootstrap
-                      </span>
-                      <div class="swiper-btn">
-                        <a
-                          href="https://star-mat-4a8.notion.site/FE-694d9f79219544a9ad1308f5301182fe"
-                          target="_blank"
-                          >Notion</a
-                        >
-                        <a
-                          href="https://github.com/douglasyoon/kyobo"
-                          target="_blank"
-                          >GitHub</a
-                        >
-                        <a
-                          href="https://www.figma.com/file/s5UI5AsMUmH8A4PR3bARCQ/%EA%B5%90%EB%B3%B4%EB%AC%B8%EA%B3%A0-%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?node-id=0%3A1&t=gcGzQ9UoGCxC7D9F-1"
-                          target="_blank"
-                          >Figma</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div class="pj-img">
-                      <img src="./assets/images/jde.png" />
-                    </div>
-                    <div class="study-project">
-                      <h2 class="tp">TEAM PROJECT</h2>
-                      <h1>JUST DO EAT (1차 프로젝트)</h1>
-                      <p>2023. 01. 11 ~ 2023. 02. 05</p>
-                      <span>
-                        제작 인원 : 7명[FE: 3명 / BE : 4명](기여도 : 35%) <br />
-                        사용 기술 : HTML, CSS, JavaScript, React, Tailwind CSS,
-                        styled components, Kakao Map API
-                      </span>
-                      <div class="swiper-btn">
-                        <a
-                          href="https://www.youtube.com/watch?v=3vGqb2JfWGo&t=152s"
-                          target="_blank"
-                          >Youtube</a
-                        >
-                        <a
-                          href="https://github.com/sirri1222/JUSTDOEAT"
-                          target="_blank"
-                          >GitHub</a
-                        >
-                        <a
-                          href="https://www.figma.com/file/Cq2MXPkiFjjTpt8K6GWkFi/JUST-DO-EAT"
-                          target="_blank"
-                          >Figma</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div class="pj-img">
-                      <img src="./assets/images/bv.png" />
-                    </div>
-                    <div class="study-project">
-                      <h2 class="tp">TEAM PROJECT</h2>
-                      <h1>BON VOYAGE (2차 프로젝트)</h1>
-                      <p>2023. 02. 07 ~ 2023. 03. 03</p>
-                      <span>
-                        제작 인원 : 7명[FE: 3명 / BE : 4명](기여도 : 34%) <br />
-                        사용 기술 : HTML, CSS, JavaScript, React, Tailwind CSS,
-                        styled components
-                      </span>
-                      <div class="swiper-btn">
-                        <a
-                          href="https://www.youtube.com/watch?v=ePmlGtwn984"
-                          target="_blank"
-                          >Youtube</a
-                        >
-                        <a
-                          href="https://github.com/GangHyun95/BON-VOYAGE"
-                          target="_blank"
-                          >GitHub</a
-                        >
-                        <a
-                          href="https://www.figma.com/file/YFKGhz0okIx69jiwmyTUZa/BON-VOYAGE"
-                          target="_blank"
-                          >Figma</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div class="pj-img">
-                      <img src="./assets/images/scfit.png" />
-
-                      <p>유튜브를 확인해주세요</p>
-                    </div>
-                    <div class="study-project">
-                      <h2 class="tp">TEAM PROJECT</h2>
-                      <h1>School Fitness (3차 프로젝트)</h1>
-                      <p>2023. 03. 06 ~ 2023. 04. 05</p>
-                      <span>
-                        제작 인원 : 9명[FE: 5명 / BE : 4명](기여도 : 19%) <br />
-                        사용 기술 : HTML, CSS, JavaScript, React, Tailwind CSS,
-                        TypeScript, Eslint, Perttier
-                      </span>
-                      <div class="swiper-btn">
-                        <a
-                          href="https://www.youtube.com/watch?v=hLS2y7jnayA"
-                          target="_blank"
-                          >Youtube</a
-                        >
-                        <a
-                          href="https://github.com/Yenhj/schoolfitness"
-                          target="_blank"
-                          >GitHub</a
-                        >
-                        <a
-                          href="https://www.figma.com/file/sNTbVVjFvHtXKhwYYMZk2B/%EC%BF%A8%ED%94%BC%EC%8A%A4(school-fitness)?node-id=0%3A1&t=dW273X45tGOhjynT-1"
-                          target="_blank"
-                          >Figma</a
                         >
                       </div>
                     </div>
@@ -552,334 +314,34 @@
           data-offset="-500"
         >
           <h2>디자인</h2>
-          <span>PERSONAL PROJECT & TEAM PROJECT</span>
-          <div
-            class="swVisual-wrap-1"
-            data-aos="fade-up"
-            data-aos-duration="900"
-            data-offset="-500"
-          >
-            <div class="swiper swVisual">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div class="pj-img">
-                      <!-- <img src="./assets/images/computer.png" class="com" /> -->
-                      <img src="./assets/images/stx.gif" class="stx-gif" />
-                    </div>
-                    <div class="study-project">
-                      <h2 class="pp">PERSONAL PROJECT</h2>
-                      <h1>STX 건설</h1>
-                      <p>2022. 11. 08 ~ 2022. 11. 21</p>
-                      <span>
-                        제작 인원 : 1명(기여도 : 100%) <br />
-                        사용 프로그램 : HTML, CSS, JavaScript
-                      </span>
-                      <div class="swiper-btn">
-                        <a href="https://zuyoe.github.io/stx/" target="_blank"
-                          >Work</a
-                        >
-                        <a href="https://github.com/zuyoe/stx" target="_blank"
-                          >GitHub</a
-                        >
-                        <a href="http://www.stxconst.co.kr/" target="_blank"
-                          >Origin</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div class="pj-img">
-                      <img
-                        src="./assets/images/hansalim.gif"
-                        class="hansalim-gif"
-                      />
-                    </div>
-                    <div class="study-project">
-                      <h2 class="pp">PERSONAL PROJECT</h2>
-                      <h1>한살림 장보기</h1>
-                      <p>2022. 11. 09 ~ 2022. 12. 21</p>
-                      <span>
-                        제작 인원 : 1명(기여도 : 100%) <br />
-                        사용 프로그램 : HTML, CSS, JavaScript
-                      </span>
-                      <div class="swiper-btn">
-                        <a
-                          href="https://zuyoe.github.io/hansalim/"
-                          target="_blank"
-                          >Work</a
-                        >
-                        <a
-                          href="https://github.com/zuyoe/hansalim"
-                          target="_blank"
-                          >GitHub</a
-                        >
-                        <a
-                          href="https://shop.hansalim.or.kr/shopping/spMain.do"
-                          target="_blank"
-                          >Origin</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div class="pj-img">
-                      <img
-                        src="./assets/images/dosiraktong.gif"
-                        class="dosiraktong-gif"
-                      />
-                    </div>
-                    <div class="study-project">
-                      <h2 class="pp">PERSONAL PROJECT</h2>
-                      <h1>도시락통</h1>
-                      <p>2022. 12. 01 ~ 2023. 01. 25</p>
-                      <span>
-                        제작 인원 : 1명(기여도 : 100%) <br />
-                        사용 기술 : HTML, CSS, JavaScript, AOS Swiper.js
-                      </span>
-                      <div class="swiper-btn">
-                        <a
-                          href="https://zuyoe.github.io/dosiraktong"
-                          target="_blank"
-                          >Work</a
-                        >
-                        <a
-                          href="https://github.com/zuyoe/dosiraktong"
-                          target="_blank"
-                          >GitHub</a
-                        >
-                        <a href="http://www.disirocktong.co.kr/" target="_blank"
-                          >Origin</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div class="pj-img">
-                      <img
-                        src="./assets/images/hyundai.gif"
-                        class="hyundai-gif"
-                      />
-                    </div>
-                    <div class="study-project">
-                      <h2 class="pp">PERSONAL PROJECT</h2>
-                      <h1>현대그룹</h1>
-                      <p>2023. 02. 27 ~ 2022. 03. 15</p>
-                      <span>
-                        제작 인원 : 1명(기여도 : 100%) <br />
-                        사용 기술 : HTML, CSS, JavaScript, AOS, Anime.js,
-                        Swiper.js
-                      </span>
-                      <div class="swiper-btn">
-                        <a
-                          href="https://zuyoe.github.io/hyundai-clone/"
-                          target="_blank"
-                          >Work</a
-                        >
-                        <a
-                          href="https://github.com/zuyoe/hyundai-clone"
-                          target="_blank"
-                          >GitHub</a
-                        >
-                        <a href="https://www.hyundaigroup.com/" target="_blank"
-                          >Origin</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div class="pj-img">
-                      <img src="./assets/images/wonderplace.gif" />
-                    </div>
-                    <div class="study-project">
-                      <h2 class="pp">PERSONAL PROJECT</h2>
-                      <h1>원더플레이스</h1>
-                      <p>2023. 03. 20 ~ 2023. 04. 05</p>
-                      <span>
-                        제작 인원 : 1명(기여도 : 100%) <br />
-                        사용 기술 : HTML, CSS, JavaScript, AOS, Anime.js,
-                        Swiper.js
-                      </span>
-                      <div class="swiper-btn">
-                        <a
-                          href="https://zuyoe.github.io/wonderplace/"
-                          target="_blank"
-                          >Work</a
-                        >
-                        <a
-                          href="https://github.com/zuyoe/wonderplace"
-                          target="_blank"
-                          >GitHub</a
-                        >
-                        <a href="https://www.wonderplace.co.kr/" target="_blank"
-                          >Origin</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div class="pj-img">
-                      <img src="./assets/images/kyobo.png" />
-                    </div>
-                    <div class="study-project">
-                      <h2 class="tp">TEAM PROJECT</h2>
-                      <h1>KYOBO (미니 프로젝트)</h1>
-                      <p>2022. 12. 19 ~ 2022. 12. 23</p>
-                      <span>
-                        제작 인원 : 7명[FE: 3명 / BE : 4명](기여도 : 35%) <br />
-                        사용 기술 : HTML, CSS, JavaScript, React, Bootstrap
-                      </span>
-                      <div class="swiper-btn">
-                        <a
-                          href="https://star-mat-4a8.notion.site/FE-694d9f79219544a9ad1308f5301182fe"
-                          target="_blank"
-                          >Notion</a
-                        >
-                        <a
-                          href="https://github.com/douglasyoon/kyobo"
-                          target="_blank"
-                          >GitHub</a
-                        >
-                        <a
-                          href="https://www.figma.com/file/s5UI5AsMUmH8A4PR3bARCQ/%EA%B5%90%EB%B3%B4%EB%AC%B8%EA%B3%A0-%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?node-id=0%3A1&t=gcGzQ9UoGCxC7D9F-1"
-                          target="_blank"
-                          >Figma</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div class="pj-img">
-                      <img src="./assets/images/jde.png" />
-                    </div>
-                    <div class="study-project">
-                      <h2 class="tp">TEAM PROJECT</h2>
-                      <h1>JUST DO EAT (1차 프로젝트)</h1>
-                      <p>2023. 01. 11 ~ 2023. 02. 05</p>
-                      <span>
-                        제작 인원 : 7명[FE: 3명 / BE : 4명](기여도 : 35%) <br />
-                        사용 기술 : HTML, CSS, JavaScript, React, Tailwind CSS,
-                        styled components, Kakao Map API
-                      </span>
-                      <div class="swiper-btn">
-                        <a
-                          href="https://www.youtube.com/watch?v=3vGqb2JfWGo&t=152s"
-                          target="_blank"
-                          >Youtube</a
-                        >
-                        <a
-                          href="https://github.com/sirri1222/JUSTDOEAT"
-                          target="_blank"
-                          >GitHub</a
-                        >
-                        <a
-                          href="https://www.figma.com/file/Cq2MXPkiFjjTpt8K6GWkFi/JUST-DO-EAT"
-                          target="_blank"
-                          >Figma</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div class="pj-img">
-                      <img src="./assets/images/bv.png" />
-                    </div>
-                    <div class="study-project">
-                      <h2 class="tp">TEAM PROJECT</h2>
-                      <h1>BON VOYAGE (2차 프로젝트)</h1>
-                      <p>2023. 02. 07 ~ 2023. 03. 03</p>
-                      <span>
-                        제작 인원 : 7명[FE: 3명 / BE : 4명](기여도 : 34%) <br />
-                        사용 기술 : HTML, CSS, JavaScript, React, Tailwind CSS,
-                        styled components
-                      </span>
-                      <div class="swiper-btn">
-                        <a
-                          href="https://www.youtube.com/watch?v=ePmlGtwn984"
-                          target="_blank"
-                          >Youtube</a
-                        >
-                        <a
-                          href="https://github.com/GangHyun95/BON-VOYAGE"
-                          target="_blank"
-                          >GitHub</a
-                        >
-                        <a
-                          href="https://www.figma.com/file/YFKGhz0okIx69jiwmyTUZa/BON-VOYAGE"
-                          target="_blank"
-                          >Figma</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div class="pj-img">
-                      <img src="./assets/images/scfit.png" />
-
-                      <p>유튜브를 확인해주세요</p>
-                    </div>
-                    <div class="study-project">
-                      <h2 class="tp">TEAM PROJECT</h2>
-                      <h1>School Fitness (3차 프로젝트)</h1>
-                      <p>2023. 03. 06 ~ 2023. 04. 05</p>
-                      <span>
-                        제작 인원 : 9명[FE: 5명 / BE : 4명](기여도 : 19%) <br />
-                        사용 기술 : HTML, CSS, JavaScript, React, Tailwind CSS,
-                        TypeScript, Eslint, Perttier
-                      </span>
-                      <div class="swiper-btn">
-                        <a
-                          href="https://www.youtube.com/watch?v=hLS2y7jnayA"
-                          target="_blank"
-                          >Youtube</a
-                        >
-                        <a
-                          href="https://github.com/Yenhj/schoolfitness"
-                          target="_blank"
-                          >GitHub</a
-                        >
-                        <a
-                          href="https://www.figma.com/file/sNTbVVjFvHtXKhwYYMZk2B/%EC%BF%A8%ED%94%BC%EC%8A%A4(school-fitness)?node-id=0%3A1&t=dW273X45tGOhjynT-1"
-                          target="_blank"
-                          >Figma</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="sw-btn">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
+          <span>상세페이지 & 팝업디자인 & 카페24 & 랜딩페이지</span>
+          <div class="cards" id="cards"></div>
         </div>
       </section>
+      <div class="modal" id="modal">
+        <div class="popup">
+          <div class="close">&times;</div>
+
+          <h2 id="title"></h2>
+
+          <div class="meta">
+            <div><strong>Category</strong> : <span id="category"></span></div>
+
+            <div><strong>기간</strong> : <span id="period"></span></div>
+
+            <div><strong>툴</strong> : <span id="tools"></span></div>
+          </div>
+          <a id="projectLink" class="project-link" target="_blank">
+            사이트 바로가기
+          </a>
+
+          <p class="desc" id="desc"></p>
+
+          <div class="image-box" id="imageBox">
+            <img id="detailImg" />
+          </div>
+        </div>
+      </div>
       <!-- 스킬 앤 툴 -->
       <section class="snt" id="snt">
         <div
@@ -953,7 +415,7 @@
             <a href="https://" target="_blank"
               ><img src="./assets/images/insta.png"
             /></a>
-            <a href="https:"
+            <a href="https://github.com/seyoung1007"
               ><img src="./assets/images/github.png" target="_blank"
             /></a>
           </div>
