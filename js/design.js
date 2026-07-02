@@ -128,7 +128,7 @@ document.querySelectorAll(".card").forEach((card, index) => {
     detailImg.src = item.detail;
     projectLink.href = item.url;
     modal.classList.add("active");
-    document.body.classList.add("no-scroll");
+    document.body.style.overflow = "hidden";
     if (item.url) {
       projectLink.href = item.url;
       projectLink.style.display = "inline-block";
@@ -140,18 +140,19 @@ document.querySelectorAll(".card").forEach((card, index) => {
 
 document.querySelector(".close").onclick = () => {
   modal.classList.remove("active");
+  document.body.style.overflow = "";
 };
 
 modal.onclick = (e) => {
   if (e.target === modal) {
     modal.classList.remove("active");
-    document.body.classList.remove("no-scroll");
+    document.body.style.overflow = "";
   }
 };
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     modal.classList.remove("active");
-    document.body.classList.remove("no-scroll");
+    document.body.style.overflow = "";
   }
 });
