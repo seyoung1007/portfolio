@@ -80,6 +80,16 @@ const works = [
     detail: "assets/images/design/웹디자인.png",
     url: "https://www.figma.com/design/TalJR4Oeqv7pU84PMFmn94/%EC%83%B5%EB%9D%BC%EC%9D%B4%ED%8A%B8?node-id=0-1&p=f&t=3vrzi5zOIBBtyxJ2-0",
   },
+  {
+    title: "웹·앱 디자인",
+    category: "앱디자인",
+    period: "2026.06",
+    tools: "Figma",
+    description: "반응형 UI를 고려하여 제작했습니다.",
+    image: "assets/images/design/앱디자인3.png",
+    detail: "assets/images/design/앱디자인3.png",
+    url: "https://www.figma.com/design/TJeVxZGO89fXJdvGT8XBFb/honbab?node-id=0-1&t=f44DTUhWSlwmmHJ1-1ㅎ",
+  },
 ];
 
 const cards = document.getElementById("cards");
