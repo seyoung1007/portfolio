@@ -88,7 +88,9 @@ body {
 .gotop.active-footer {
   bottom: 120px !important;
 }
-
+.yun {
+  width: 100%;
+}
 /* 헤더 */
 .header {
   position: fixed;
@@ -103,11 +105,14 @@ body {
   background-color: #fff;
   border-bottom: 1px solid #ececec;
 }
+.header-active .inner{
+  height: 80px;
+}
 .header .inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+
 }
 .zulogo {
   width: 200px;
@@ -487,8 +492,8 @@ body {
   position: absolute;
   top: 113px;
   left: 50px;
-  width: 400px;
-  height: 400px;
+  width: 250px;
+
   margin-left: 20px;
 }
 .bubble {
