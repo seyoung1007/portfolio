@@ -1,40 +1,26 @@
 .ai-workflow {
-  width: 1200px;
+  max-width: 1200px;
   margin: 150px auto;
 }
 
-.title h2{
-  position: relative;
-  font-size: 3rem;
-  font-weight: 800;
+.title {
   text-align: center;
-  margin-bottom: 100px;
-  letter-spacing: 18px;
-  margin-bottom: 25px;
+  margin-bottom: 70px;
 }
-.title::after {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 6px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -50px;
-  background-color: #000;
+
+.title h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
 }
+
 .title p {
-  display: block;
-  font-weight: 300;
-  text-align: center;
-  color: #0a0a0a;
-line-height: 1.5;
-  font-size:16px;
-  margin-bottom: 60px;
+  color: #777;
+  line-height: 1.8;
 }
 
 .workflow {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
 
@@ -80,4 +66,90 @@ line-height: 1.5;
   object-fit: cover;
   background: #f5f5f5;
   padding: 10px;
+}
+
+.ai-section {
+  max-width: 1200px;
+  margin: 120px auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title span {
+  color: #6b63ff;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.title h2 {
+  margin: 15px 0;
+  font-size: 42px;
+}
+
+.title p {
+  color: #777;
+  line-height: 1.7;
+}
+
+.card-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+}
+
+.card-img {
+  height: 250px;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.6s;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card-text {
+  padding: 30px;
+}
+
+.card-text h3 {
+  font-size: 28px;
+}
+
+.card-text h4 {
+  color: #6b63ff;
+  margin: 10px 0 20px;
+}
+
+.card-text ul {
+  list-style: none;
+}
+
+.card-text li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.ai-desc{
+  margin-top: 30px;
 }
