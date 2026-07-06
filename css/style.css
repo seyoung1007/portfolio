@@ -1035,7 +1035,8 @@ body {
   gap: 30px;
   margin-top: 50px;
 }
-.swiper-btn > a {
+.swiper-btn > a,
+.swiper-btn > .detail-btn {
   background-color: #fff;
   font-size: 15px;
   font-weight: bold;
@@ -1049,6 +1050,12 @@ body {
     0 1px 3px rgba(145, 145, 145, 0.12),
     0 1px 2px rgba(139, 139, 139, 0.24);
   cursor: pointer;
+}
+
+.swiper-btn > .detail-btn {
+  color: #fff;
+  background-color: #7c3aed;
+  box-shadow: none;
 }
 .swiper-button-next {
   position: absolute;
@@ -1778,5 +1785,110 @@ body {
 @media screen and (max-width: 767px) {
   .footer .inner > p {
     font-size: 1rem;
+  }
+}
+
+/* ===== 프로젝트 상세 모달 (기획의도/배운점/느낀점) ===== */
+.detail-btn {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.pj-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 10, 30, 0.65);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  padding: 20px;
+}
+
+.pj-modal.active {
+  display: flex;
+}
+
+.pj-popup {
+  width: 700px;
+  max-width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 45px 40px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.pj-close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  color: #999;
+  transition: 0.2s;
+}
+
+.pj-close:hover {
+  color: #7c3aed;
+}
+
+.pj-popup h2 {
+  font-size: 26px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #7c3aed, #c084fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 8px;
+}
+
+.pj-meta {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.pj-section {
+  margin-bottom: 22px;
+}
+
+.pj-section:last-child {
+  margin-bottom: 0;
+}
+
+.pj-section h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  display: inline-block;
+  background: #7c3aed;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.pj-section p {
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: #3c3c3c;
+  white-space: pre-line;
+}
+
+@media (max-width: 768px) {
+  .pj-popup {
+    padding: 30px 22px;
+  }
+  .pj-popup h2 {
+    font-size: 21px;
   }
 }

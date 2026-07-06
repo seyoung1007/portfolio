@@ -38,6 +38,7 @@
     <script src="js/script.js"></script>
     <script src="js/design.js" defer></script>
     <script src="js/ai.js" defer></script>
+    <script src="js/project-detail.js" defer></script>
 
     <!-- Link Swiper's CSS -->
     <link
@@ -243,6 +244,13 @@
                       <div class="swiper-btn">
                         <a href="#">Work</a>
                         <a href="#">GitHub</a>
+                        <button
+                          type="button"
+                          class="detail-btn"
+                          data-project="adobe"
+                        >
+                          자세히
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -273,6 +281,13 @@
                       <div class="swiper-btn">
                         <a href="#">Work</a>
                         <a href="#">GitHub</a>
+                        <button
+                          type="button"
+                          class="detail-btn"
+                          data-project="fitmatch"
+                        >
+                          자세히
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -306,6 +321,13 @@
                           target="_blank"
                           >GitHub</a
                         >
+                        <button
+                          type="button"
+                          class="detail-btn"
+                          data-project="shoplite"
+                        >
+                          자세히
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -339,6 +361,13 @@
                         <a href="http://www.stxconst.co.kr/" target="_blank"
                           >Origin</a
                         >
+                        <button
+                          type="button"
+                          class="detail-btn"
+                          data-project="stx"
+                        >
+                          자세히
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -367,6 +396,13 @@
                         <a href="http://www.disirocktong.co.kr/" target="_blank"
                           >Origin</a
                         >
+                        <button
+                          type="button"
+                          class="detail-btn"
+                          data-project="dosirak"
+                        >
+                          자세히
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -389,10 +425,21 @@
                         제작 인원 : 1명(기여도 : 100%) <br />
                         사용 기술 : HTML, CSS, JavaScript, AOS Swiper.js
                       </span>
+                      <span class="pj-desc">
+                        "카드형 리스트와 필터 UI가 뒤섞인 복잡한 화면 → 검색·필터·카드
+                        영역을 분리한 레이아웃 구조로 재구성"
+                      </span>
                       <div class="swiper-btn">
                         <a href="#" target="_blank">Work</a>
                         <a href="#" target="_blank">GitHub</a>
                         <a href="#" target="_blank">Origin</a>
+                        <button
+                          type="button"
+                          class="detail-btn"
+                          data-project="airbnb"
+                        >
+                          자세히
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -416,10 +463,21 @@
                         제작 인원 : 1명(기여도 : 100%) <br />
                         사용 기술 : HTML, CSS, JavaScript, AOS Swiper.js
                       </span>
+                      <span class="pj-desc">
+                        "검색창 하나에 기능이 집중된 미니멀 구조 → 여백과 정렬만으로
+                        신뢰감을 주는 레이아웃 재현"
+                      </span>
                       <div class="swiper-btn">
                         <a href="#" target="_blank">Figma</a>
                         <a href="#" target="_blank">GitHub</a>
                         <a href="#" target="_blank">Site</a>
+                        <button
+                          type="button"
+                          class="detail-btn"
+                          data-project="google"
+                        >
+                          자세히
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -465,8 +523,43 @@
 
           <p class="desc" id="desc"></p>
 
+          <div class="pj-section">
+            <h3>기획의도</h3>
+            <p id="designIntent"></p>
+          </div>
+          <div class="pj-section">
+            <h3>배운점</h3>
+            <p id="designLearned"></p>
+          </div>
+          <div class="pj-section">
+            <h3>느낀점</h3>
+            <p id="designThoughts"></p>
+          </div>
+
           <div class="image-box" id="imageBox">
             <img id="detailImg" />
+          </div>
+        </div>
+      </div>
+
+      <!-- 프로젝트 상세 모달 (기획의도 / 배운점 / 느낀점) -->
+      <div class="pj-modal" id="pjModal">
+        <div class="pj-popup">
+          <div class="pj-close" id="pjClose">&times;</div>
+          <h2 id="pjTitle"></h2>
+          <p class="pj-meta" id="pjMeta"></p>
+
+          <div class="pj-section">
+            <h3>기획의도</h3>
+            <p id="pjIntent"></p>
+          </div>
+          <div class="pj-section">
+            <h3>배운점</h3>
+            <p id="pjLearned"></p>
+          </div>
+          <div class="pj-section">
+            <h3>느낀점</h3>
+            <p id="pjThoughts"></p>
           </div>
         </div>
       </div>
