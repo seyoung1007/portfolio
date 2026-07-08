@@ -64,14 +64,49 @@ window.onload = function () {
   });
 
   // 비주얼 슬라이드 기능
+  // 카테고리 필터 적용 시 슬라이드를 통째로 교체하므로
+  // loop는 꺼서(false) 필터링 후에도 순서/개수가 꼬이지 않도록 함
   const swiper = new Swiper(".swVisual", {
-    loop: true,
+    loop: false,
     // slidesPerView: 1,
     // spaceBetween: 20,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+  });
+
+  // 프로젝트 카테고리 필터 (전체 / 팀 / 개인 / 클론코딩)
+  // 최초 슬라이드 DOM 요소를 그대로 보관해뒀다가 필터 클릭 시
+  // swiper에서 빼고(remove) 다시 꽂아넣는(append) 방식 -> detail-btn 등
+  // 기존에 바인딩된 이벤트 리스너가 그대로 유지됨
+  const allProjectSlides = Array.from(swiper.slides);
+  const filterBtns = document.querySelectorAll("#projectFilter .filter-btn");
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filterBtns.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const filter = btn.dataset.filter;
+      const matched = allProjectSlides.filter(
+        (slide) => filter === "all" || slide.dataset.category === filter,
+      );
+
+      swiper.removeAllSlides();
+      swiper.appendSlide(matched);
+      swiper.update();
+      swiper.slideTo(0, 0);
+
+      setTimeout(() => {
+        const videos = document.querySelectorAll(".swiper-slide video");
+        videos.forEach((video) => {
+          video.pause();
+          video.currentTime = 0;
+          video.play().catch(() => {});
+        });
+      }, 50);
+    });
   });
 
   // 클릭스크롤

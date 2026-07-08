@@ -888,6 +888,43 @@ body {
   margin-bottom: 60px;
 }
 
+/* 프로젝트 카테고리 필터 탭 */
+.project-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.filter-btn {
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 1px solid #a78bfa;
+  background: #fff;
+  color: #555;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.filter-btn .count {
+  margin-left: 4px;
+  font-weight: 700;
+  opacity: 0.7;
+}
+.filter-btn:hover {
+  border-color: #7c3aed;
+  color: #7c3aed;
+}
+.filter-btn.active {
+  background: linear-gradient(90deg, #7c3aed, #c084fc);
+  color: #fff;
+  border-color: transparent;
+}
+.filter-btn.active .count {
+  opacity: 0.9;
+}
+
 /* swiper */
 .swVisual-wrap-1 {
   position: relative;

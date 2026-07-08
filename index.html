@@ -210,6 +210,20 @@
         >
           <h2>프로젝트</h2>
           <span>PERSONAL PROJECT & TEAM PROJECT</span>
+          <div class="project-filter" id="projectFilter">
+            <button type="button" class="filter-btn active" data-filter="all">
+              전체 <span class="count">7</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="team">
+              팀프로젝트 <span class="count">1</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="personal">
+              개인프로젝트 <span class="count">2</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="clone">
+              클론코딩 <span class="count">4</span>
+            </button>
+          </div>
           <div
             class="swVisual-wrap-1"
             data-aos="fade-up"
@@ -219,7 +233,7 @@
             <div class="swiper swVisual">
               <div class="swiper-wrapper">
                 <!-- 팀프로젝트 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-category="team">
                   <div class="project">
                     <div class="pj-img">
                       <video class="stx-gif" autoplay loop muted playsinline>
@@ -243,7 +257,7 @@
                       </span>
                       <div class="swiper-btn">
                         <a
-                          href="https://seyoung1007.github.io/TIL/project/project-adobe/"
+                          href="https://seyoung1007.github.io/TIL/project/project-adobe/subpage1.html"
                           target="_blank"
                           >Work</a
                         >
@@ -264,7 +278,7 @@
                   </div>
                 </div>
                 <!-- 개인프로젝트 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-category="personal">
                   <div class="project">
                     <div class="pj-img">
                       <video class="stx-gif" autoplay loop muted playsinline>
@@ -308,7 +322,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-category="personal">
                   <div class="project">
                     <div class="pj-img">
                       <video class="stx-gif" autoplay loop muted playsinline>
@@ -353,7 +367,7 @@
                   </div>
                 </div>
                 <!-- 클론코딩 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-category="clone">
                   <div class="project">
                     <div class="pj-img">
                       <video class="stx-gif" autoplay loop muted playsinline>
@@ -400,7 +414,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-category="clone">
                   <div class="project">
                     <div class="pj-img">
                       <video class="stx-gif" autoplay loop muted playsinline>
@@ -443,7 +457,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-category="clone">
                   <div class="project">
                     <div class="pj-img">
                       <video class="stx-gif" autoplay loop muted playsinline>
@@ -462,8 +476,8 @@
                         사용 기술 : HTML, CSS, JavaScript, AOS Swiper.js
                       </span>
                       <span class="pj-desc">
-                        "카드형 리스트와 필터 UI가 뒤섞인 복잡한 화면 → 검색·필터·카드
-                        영역을 분리한 레이아웃 구조로 재구성"
+                        "카드형 리스트와 필터 UI가 뒤섞인 복잡한 화면 →
+                        검색·필터·카드 영역을 분리한 레이아웃 구조로 재구성"
                       </span>
                       <div class="swiper-btn">
                         <a
@@ -489,7 +503,7 @@
                   </div>
                 </div>
 
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-category="clone">
                   <div class="project">
                     <div class="pj-img">
                       <video class="stx-gif" autoplay loop muted playsinline>
@@ -508,8 +522,8 @@
                         사용 기술 : HTML, CSS, JavaScript, AOS Swiper.js
                       </span>
                       <span class="pj-desc">
-                        "검색창 하나에 기능이 집중된 미니멀 구조 → 여백과 정렬만으로
-                        신뢰감을 주는 레이아웃 재현"
+                        "검색창 하나에 기능이 집중된 미니멀 구조 → 여백과
+                        정렬만으로 신뢰감을 주는 레이아웃 재현"
                       </span>
                       <div class="swiper-btn">
                         <a href="#" target="_blank">Figma</a>
