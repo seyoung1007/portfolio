@@ -85,7 +85,8 @@ const works = [
     category: "앱디자인",
     period: "2026.06",
     tools: "Figma",
-    description: "반응형 UI를 고려하여 제작했습니다.",
+    description:
+      "다양한 화면 크기에 대응하는 컴포넌트 기반 커머스 앱 UI를 설계했습니다.",
     image: "assets/images/design/앱디자인.png",
     detail: "assets/images/design/앱디자인.png",
     url: "https://www.figma.com/design/yJ7x2fbi07PNHvussY9Jeo/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C?node-id=0-1&p=f&t=z6zbbSCTXNWxgXLF-0",
@@ -101,7 +102,7 @@ const works = [
     category: "앱디자인",
     period: "2026.06",
     tools: "Figma",
-    description: "반응형 UI를 고려하여 제작했습니다.",
+    description: "User Flow를 먼저 설계한 뒤 화면을 구성한 앱 UI입니다.",
     image: "assets/images/design/앱디자인2.png",
     detail: "assets/images/design/앱디자인2.png",
     url: "https://www.figma.com/design/t7zxsROqRQXVH7zcvIGji0/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C?node-id=1-15&t=ia5O14e2EGhOzPJn-0",
@@ -116,7 +117,7 @@ const works = [
     category: "웹디자인",
     period: "2026.06",
     tools: "Figma",
-    description: "반응형 UI를 고려하여 제작했습니다.",
+    description: "넓은 화면의 정보 위계를 고려한 반응형 웹 UI입니다.",
     image: "assets/images/design/웹디자인.png",
     detail: "assets/images/design/웹디자인.png",
     url: "https://www.figma.com/design/TalJR4Oeqv7pU84PMFmn94/%EC%83%B5%EB%9D%BC%EC%9D%B4%ED%8A%B8?node-id=0-1&p=f&t=3vrzi5zOIBBtyxJ2-0",
@@ -132,7 +133,7 @@ const works = [
     category: "앱디자인",
     period: "2026.06",
     tools: "Figma",
-    description: "반응형 UI를 고려하여 제작했습니다.",
+    description: "'혼밥' 상황에 맞춰 메뉴 선택을 단순화한 앱 UI입니다.",
     image: "assets/images/design/앱디자인3.png",
     detail: "assets/images/design/앱디자인3.png",
     url: "https://www.figma.com/design/TJeVxZGO89fXJdvGT8XBFb/honbab?node-id=0-1&t=f44DTUhWSlwmmHJ1-1ㅎ",
@@ -182,6 +183,20 @@ const designThoughts = document.getElementById("designThoughts");
 const detailImg = document.getElementById("detailImg");
 const imageBox = document.getElementById("imageBox");
 const moreBtn = document.getElementById("moreBtn");
+const tabBtns = document.getElementById("tabBtns");
+
+function switchTab(tabId) {
+  tabBtns.querySelectorAll(".tab-btn").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.tab === tabId);
+  });
+  document.querySelectorAll(".tab-panel").forEach((panel) => {
+    panel.classList.toggle("active", panel.id === tabId);
+  });
+}
+
+tabBtns.querySelectorAll(".tab-btn").forEach((btn) => {
+  btn.onclick = () => switchTab(btn.dataset.tab);
+});
 
 document.querySelectorAll(".card").forEach((card, index) => {
   card.onclick = () => {
@@ -196,6 +211,8 @@ document.querySelectorAll(".card").forEach((card, index) => {
     designThoughts.textContent = item.thoughts || "";
     detailImg.src = item.detail;
     projectLink.href = item.url;
+    switchTab("desc");
+    imageBox.scrollTop = 0;
     modal.classList.add("active");
     document.body.style.overflow = "hidden";
     if (item.url) {

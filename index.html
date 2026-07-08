@@ -587,23 +587,23 @@
             사이트 바로가기
           </a>
 
-          <p class="desc" id="desc"></p>
-
-          <div class="pj-section">
-            <h3>기획의도</h3>
-            <p id="designIntent"></p>
-          </div>
-          <div class="pj-section">
-            <h3>배운점</h3>
-            <p id="designLearned"></p>
-          </div>
-          <div class="pj-section">
-            <h3>느낀점</h3>
-            <p id="designThoughts"></p>
-          </div>
-
           <div class="image-box" id="imageBox">
             <img id="detailImg" />
+          </div>
+
+          <div class="desc-tabs">
+            <div class="tab-btns" id="tabBtns">
+              <button class="tab-btn active" data-tab="desc">개요</button>
+              <button class="tab-btn" data-tab="designIntent">기획의도</button>
+              <button class="tab-btn" data-tab="designLearned">배운점</button>
+              <button class="tab-btn" data-tab="designThoughts">느낀점</button>
+            </div>
+            <div class="tab-panels">
+              <p class="tab-panel active" id="desc"></p>
+              <p class="tab-panel" id="designIntent"></p>
+              <p class="tab-panel" id="designLearned"></p>
+              <p class="tab-panel" id="designThoughts"></p>
+            </div>
           </div>
         </div>
       </div>
