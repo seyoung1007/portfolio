@@ -1,3 +1,4 @@
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -100,7 +101,8 @@
 }
 
 .image-box {
-  max-height: 480px;
+  max-height:400px;
+
   overflow-y: auto;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -126,7 +128,9 @@
   background: #555;
 }
 @media (max-width: 768px) {
+
   .popup {
+   
     padding: 25px;
   }
 }
