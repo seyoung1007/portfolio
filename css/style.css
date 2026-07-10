@@ -275,13 +275,14 @@ body {
   margin-right: 20px;
 }
 .visual-left > h1 {
-  font-size: 8rem;
+  font-size: 4.2rem;
   /* 상단 오른쪽 아래 왼쪽 */
   margin: 200px 0 60px 50px;
   font-family: "Cooper Black", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #6d28d9;
+  line-height: 1.3;
 }
 .visual-left > h1 > .hd-color {
   color: #a78bfa;
@@ -290,11 +291,11 @@ body {
   font-size: 7rem;
 }
 .visual-left p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-left: 50px;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #696969;
-  white-space: nowrap;
+  white-space: normal;
 }
 .visual-left span {
   position: relative;
