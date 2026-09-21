@@ -1,0 +1,200 @@
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.35s;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+.info {
+  padding: 25px;
+}
+
+.category {
+  color: #777;
+  font-size: 14px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.view {
+  color: #4f46e5;
+  font-weight: bold;
+}
+
+/* modal */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.popup {
+  width: 1040px;
+  height: 90vh;
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  position: relative;
+  overflow-y: auto;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.popup h2 {
+  margin-bottom: 15px;
+}
+
+.meta {
+  display: flex;
+  gap: 30px;
+  margin: 20px 0;
+  color: #666;
+  flex-wrap: wrap;
+}
+
+.desc {
+  line-height: 1.8;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.image-box {
+  max-height: 570px;
+  margin: 20px 0 25px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.image-box img {
+  width: 100%;
+  display: block;
+}
+
+/* 설명 탭 */
+.desc-tabs {
+  margin-top: 5px;
+}
+
+.tab-btns {
+  display: flex;
+  gap: 6px;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 18px;
+  border: none;
+  background: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #999;
+  cursor: pointer;
+  position: relative;
+  transition: 0.25s;
+}
+
+.tab-btn:hover {
+  color: #4f46e5;
+}
+
+.tab-btn.active {
+  color: #4f46e5;
+}
+
+.tab-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #4f46e5;
+}
+
+.tab-panel {
+  display: none;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #444;
+}
+
+.tab-panel.active {
+  display: block;
+}
+.project-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+
+.project-link:hover {
+  background: #555;
+}
+@media (max-width: 768px) {
+
+  .popup {
+    width: 92vw;
+    padding: 25px;
+  }
+
+  .image-box {
+    max-height: 320px;
+  }
+
+  .tab-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
